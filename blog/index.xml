@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Climate Change</title>
-    <link>https://github.com/capstone/blog/</link>
+    <link>https://github.com/Capstone/blog/</link>
     <description>Recent content in Blogs on Climate Change</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year}</copyright>
-    <lastBuildDate>Mon, 17 May 2021 12:51:11 -0700</lastBuildDate><atom:link href="https://github.com/capstone/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 May 2021 12:51:11 -0700</lastBuildDate><atom:link href="https://github.com/Capstone/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Climate Change</title>
-      <link>https://github.com/capstone/blog/climatechange/</link>
+      <link>https://github.com/Capstone/blog/climatechange/</link>
       <pubDate>Mon, 17 May 2021 12:51:11 -0700</pubDate>
       
-      <guid>https://github.com/capstone/blog/climatechange/</guid>
+      <guid>https://github.com/Capstone/blog/climatechange/</guid>
       <description>Motivation The science underpinning the belief in man made climate change is rigorous, well tested and has existed for nearly two centuries.
 It is only in the last few years, however, that people have begun to question the science.
 Pendley was the Director of the Bureau of Land Management.
