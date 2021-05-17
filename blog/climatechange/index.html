@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Climate Change | Climate Change</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/Fleschmc/Capstone-Page.github.io/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/Fleschmc/Capstone-Page.github.io/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/github.com\/Fleschmc\/Capstone-Page.github.io\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Climate Change",
+      "headline" : "Climate Change",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-05-17 12:51:11 -0700 PDT",
+      "dateModified" : "2021-05-17 12:51:11 -0700 PDT",
+      "url" : "https:\/\/github.com\/Fleschmc\/Capstone-Page.github.io\/blog\/climatechange\/",
+      "wordCount" : "313",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/Fleschmc/Capstone-Page.github.io/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/Fleschmc/Capstone-Page.github.io/blog/climatechange">Climate Change</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Climate Change</h1>
+            <time datetime="2021-05-17 12:51:11 -0700 PDT" class="post__date">May 17 2021</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="motivation">Motivation<a class="anchor" href="#motivation">#</a></h2>
+<p>The <a href="https://www.carbonbrief.org/the-most-influential-climate-change-papers-of-all-time" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>science</a>
+ underpinning the belief in man made climate change is rigorous, well tested and has existed for nearly two centuries.<br>
+<img src="/img/obama_tweet.PNG" alt="Obama"></p>
+<p>It is only in the last few years, however, that people have begun to question the science.<br>
+<img src="/img/trump_tweet.PNG" alt="Trump"></p>
+<p>Pendley <a href="https://twitter.com/cnnbrk/status/1294705313908764680" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>was</a>
+ the Director of the Bureau of Land Management.
+<img src="/img/pendley_tweet.png" alt="Pendley"><br>
+This concerned me. But is this a case of the loud minority? Or something more..</p>
+<p>Maybe I can quantify it.</p>
+<h2 id="data">Data<a class="anchor" href="#data">#</a></h2>
+<p>Using a dataset from <a href="https://data.world/crowdflower/sentiment-of-climate-change" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>CrowdFlower</a>
+ I&rsquo;m able to retrain a Natural Language Processing, Deep Learning model created by Google named <a href="/papers/bert.pdf" 
+  
+  
+>BERT.</a>
+ The data comes with just over six thousand observations but after cleaning I am left with around four and a half thousand. My data looks like this:</p>
+<table>
+<thead>
+<tr>
+<th>Tweet</th>
+<th>Existence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fighting poverty and global warming in Africa [link]</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>the scientific community was scamed by global green  gov warming scam.</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>Now BERT is a pretrained model and this is key because my data is far too small to create a NLP model from scratch. Google had to feed BERT hundreds of books and basically the entirety of Wikipedia to teach it English and as a result it understands the language remarkably well. Now I can use my significantly smaller dataset to retrain BERT to read a tweet and predict if that tweet shows belief in climate change.</p>
+<p>Now that the training data is squared away, I need something for BERT to predict on. Enter the Twitter API. Twitter graciously granted me access to their API and with it I was able to pull a little over 480,000 tweets. The goal was to pull one hundred tweets a day starting on April 1st, 2008 and ending on March 30th, 2021. The criteria for the tweets were simple and intentionally so. First they had to be original tweets, no retweets. Second they had to include the words &ldquo;Climate Change&rdquo; or &ldquo;Global Warming&rdquo;.</p>
+<h2 id="analysis">Analysis<a class="anchor" href="#analysis">#</a></h2>
+<h2 id="results">Results<a class="anchor" href="#results">#</a></h2>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/fleschmc"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://github.com/Fleschmc/Capstone-Page.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="LinkedIn"
+         href="https://www.linkedin.com/in/fleschmichael/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://github.com/Fleschmc/Capstone-Page.github.io/svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+     
+</div>
+
+            <p>© 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/Fleschmc/Capstone-Page.github.io/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
