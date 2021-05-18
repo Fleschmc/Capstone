@@ -159,11 +159,11 @@ This concerned me. But is this a case of the loud minority? Or something more..<
 <p>Great now I have both the training data and the prediction data, now I need some covariates. I thought it would be interesting to look at the stock market and election cycles. First I gathered the open and close stock price for three large oil companies: Chevron, BP and Exxon. Second I simply added a column to my dataset that would track which political party held the office of the president for each day in my dataset. Finally my data was complete.</p>
 <h2 id="analysis">Analysis<a class="anchor" href="#analysis">#</a></h2>
 <p>So how does BERT predict?<br>
-<img src="/img/Confusion_Matrix.png" alt="CMatrix"></p>
+<img src="/Capstone/img/Confusion_Matrix.png" alt="CMatrix"></p>
 <p>Very well in fact. It is important to note that the data came to me from CrowdFlower with unbalanced classes. That is to say there is an unequal number of tweets coded for belief and disbelief. This certainly can affect prediction and if I had more data I would have happily removed some until I had balanced classes but as it stood I was short of data and didn&rsquo;t have this luxury. None the less we can see that the correct predictions reign supreme and by a large margin.</p>
 <p>I can then use the predictions BERT spits out to create these graphs.
-<img src="/img/belief_week.png" alt="Weekly"><br>
-<img src="/img/belief_month.png" alt="Monthly"></p>
+<img src="/Capstone/img/belief_week.png" alt="Weekly"><br>
+<img src="/Capstone/img/belief_month.png" alt="Monthly"></p>
 <p>So is this seeming disbelief in climate change a localized phenomena where the small minority are the loudest? According to my data it seems so! The percentage of tweets that BERT predicts belief in climate change hovers right around 85%. Seemingly, people do believe in climate change, and the numbers aren&rsquo;t even close.</p>
 <p>So we understand how people on Twitter believe, but how</p>
 
