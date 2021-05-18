@@ -62,7 +62,7 @@
       "datePublished": "2021-05-17 12:51:11 -0700 PDT",
       "dateModified" : "2021-05-17 12:51:11 -0700 PDT",
       "url" : "http:\/\/fleschmc.github.io\/Capstone\/blog\/climatechange\/",
-      "wordCount" : "618",
+      "wordCount" : "831",
       "keywords" : ["Blog"]
     }
   
@@ -166,7 +166,10 @@
 <img src="/Capstone/img/belief_month.png" alt="Monthly"></p>
 <p>So is this seeming disbelief in climate change a localized phenomena where the small minority are the loudest? According to my data it seems so! The percentage of tweets that BERT predicts belief in climate change hovers right around 85%. Seemingly, people do believe in climate change, and the numbers aren&rsquo;t even close.</p>
 <p>So we understand how people on Twitter believe, but can we say anything more?</p>
-<p><img src="/Capstone/img/Regressions.png" alt="Regression"></p>
+<p>Reexamine those time series belief graphs for a moment and pay special attention to the vertical lines. Each line represents a presidential election year and the color of the line represents the winning candidate&rsquo;s party. Do you see a trend?</p>
+<p>The beauty is I can formalize this line of thinking. Regression is a wonderful tool for trying to understand how variables or phenomena in the world affect each other. Can we measure the effect the current president&rsquo;s party has on how people are tweeting about climate change? Well we are going to do our best.</p>
+<p>First it is important that I once more clarify the form of my data. At the observation level, my data takes the form of individual tweets. That is to say that it is entirely possible (and is indeed the case) that I could have multiple tweets from the same user. I will rely on this to create unit level fixed effects. Below is a table where each column is a regression with a slightly different specification. These regressions all have the same variables but the the number of tweets a user must have to stay in the analysis increments by one each column. i.e. column 1 requires that a user have two or more tweets to be included.</p>
+<p><img src="/Capstone/img/regressions.png" alt="Regression"></p>
 
 
               
