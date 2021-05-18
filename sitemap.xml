@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/Fleschmc/Capstone/</loc>
+    <loc>/Capstone/</loc>
     <lastmod>2021-05-17T12:51:11-07:00</lastmod>
   </url><url>
-    <loc>https://github.com/Fleschmc/Capstone/blog/</loc>
+    <loc>/Capstone/blog/</loc>
     <lastmod>2021-05-17T12:51:11-07:00</lastmod>
   </url><url>
-    <loc>https://github.com/Fleschmc/Capstone/blog/climatechange/</loc>
+    <loc>/Capstone/blog/climatechange/</loc>
     <lastmod>2021-05-17T12:51:11-07:00</lastmod>
   </url><url>
-    <loc>https://github.com/Fleschmc/Capstone/categories/</loc>
+    <loc>/Capstone/categories/</loc>
   </url><url>
-    <loc>https://github.com/Fleschmc/Capstone/tags/</loc>
+    <loc>/Capstone/tags/</loc>
   </url>
 </urlset>
