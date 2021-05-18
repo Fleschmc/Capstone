@@ -62,7 +62,7 @@
       "datePublished": "2021-05-17 12:51:11 -0700 PDT",
       "dateModified" : "2021-05-17 12:51:11 -0700 PDT",
       "url" : "http:\/\/fleschmc.github.io\/Capstone\/blog\/climatechange\/",
-      "wordCount" : "356",
+      "wordCount" : "606",
       "keywords" : ["Blog"]
     }
   
@@ -156,9 +156,16 @@ This concerned me. But is this a case of the loud minority? Or something more..<
 </table>
 <p>Now BERT is a pretrained model and this is key because my data is far too small to create a NLP model from scratch. Google had to feed BERT hundreds of books and basically the entirety of Wikipedia to teach it English and as a result it understands the language remarkably well. Now I can use my significantly smaller dataset to retrain BERT to read a tweet and predict if that tweet shows belief in climate change.</p>
 <p>Now that the training data is squared away, I need something for BERT to predict on. Enter the Twitter API. Twitter graciously granted me access to their API and with it I was able to pull a little over 480,000 tweets. The goal was to pull one hundred tweets a day starting on April 1st, 2008 and ending on March 30th, 2021. The criteria for the tweets were simple and intentionally so. First they had to be original, no retweets. Second they had to include the words &ldquo;Climate Change&rdquo; or &ldquo;Global Warming&rdquo; and that&rsquo;s it, so long as a tweet matched those conditions I could pull it. I kept my search general so as to get a fair sampling of both sides, my fear being that an overly complex search would unintentionally bias the results.</p>
+<p>Great now I have both the training data and the prediction data, now I need some covariates. I thought it would be interesting to look at the stock market and election cycles. First I gathered the open and close stock price for three large oil companies: Chevron, BP and Exxon. Second I simply added a column to my dataset that would track which political party held the office of the president for each day in my dataset. Finally my data was complete.</p>
 <h2 id="analysis">Analysis<a class="anchor" href="#analysis">#</a></h2>
-<p>great</p>
-<h2 id="results">Results<a class="anchor" href="#results">#</a></h2>
+<p>So how does BERT predict?<br>
+<img src="http://fleschmc.github.io/Capstone/img/Confusion_Matrix.png" alt="CMatrix"></p>
+<p>Very well in fact. It is important to note that the data came to me from CrowdFlower with unbalanced classes. That is to say there is an unequal number of tweets coded for belief and disbelief. This certainly can affect prediction and if I had more data I would have happily removed some until I had balanced classes but as it stood I was short of data and didn&rsquo;t have this luxury. None the less we can see that the correct predictions reign supreme and by a large margin.</p>
+<p>I can then use the predictions BERT spits out to create these graphs.
+<img src="http://fleschmc.github.io/Capstone/img/belief_week.png" alt="Weekly"><br>
+<img src="http://fleschmc.github.io/Capstone/img/belief_month.png" alt="Monthly"></p>
+<p>So is this seeming disbelief in climate change a localized phenomena where the small minority are the loudest? According to my data it seems so! The percentage of tweets that BERT predicts belief in climate change hovers right around 85%. Seemingly, people do believe in climate change, and the numbers aren&rsquo;t even close.</p>
+<p>So we understand how people on Twitter believe, but how</p>
 
 
               
