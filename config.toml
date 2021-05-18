@@ -5,7 +5,7 @@ theme = "hugo-theme-codex"
 # Override these settings with your own
 title = "Climate Change"
 languageCode = "en-us"
-baseURL = "https://github.com/Fleschmc/Capstone"
+baseURL = "http://fleschmc.github.io/Capstone/"
 copyright = "© {year}"
 
 # Add your Disqus shortname here.
